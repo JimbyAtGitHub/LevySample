@@ -1,0 +1,72 @@
+/*
+* Record.kt
+* © 2024 Fleetio
+* */
+package com.example.levysample.data.vehicle
+
+data class Record(
+    val account_id: Int? = null,
+    val ai_enabled: Boolean? = false,
+    val archived_at: String? = null,
+    val assetable_type: String? = null,
+    val axle_config_id: Int? = null,
+    val color: String? = null,
+    val comments_count: Int? = null,
+    val current_location_entry_id: Int? = null,
+    val custom_fields: CustomFields? = null,
+    val default_image_url_small: String? = null,
+    val documents_count: Int? = null,
+    val estimated_replacement_mileage: String? = null,
+    val estimated_resale_price_cents: Int? = null,
+    val estimated_service_months: Int? = null,
+    val external_ids: ExternalIds? = null,
+    val fuel_entries_count: Int? = null,
+    val fuel_type_id: Int? = null,
+    val fuel_type_name: String? = null,
+    val fuel_volume_units: String? = null,
+    val group_id: Int? = null,
+    val group_ancestry: String? = null,
+    val group_name: String? = null,
+    val id: Int? = null,
+    val images_count: Int? = null,
+    val in_service_date: String? = null,
+    val in_service_meter_value: String? = null,
+    val is_sample: Boolean? = null,
+    val issues_count: Int? = null,
+    val labels: List<Label> = emptyList(),
+    val license_plate: String? = null,
+    val make: String? = null,
+    val model: String? = null,
+    val name: String? = null,
+    val out_of_service_date: String? = null,
+    val out_of_service_meter_value: String? = null,
+    val ownership: String? = null,
+    val primary_meter_date: String? = null,
+    val primary_meter_unit: String? = null,
+    val primary_meter_usage_per_day: String? = null,
+    val primary_meter_value: String? = null,
+    val registration_expiration_month: Int? = null,
+    val registration_state: String? = null,
+    val secondary_meter_date: String? = null,
+    val secondary_meter_unit: String? = null,
+    val secondary_meter_usage_per_day: String? = null,
+    val secondary_meter_value: String? = null,
+    val service_entries_count: Int? = null,
+    val service_reminders_count: Int? = null,
+    val system_of_measurement: String? = null,
+    val trim: String? = null,
+    val vehicle_renewal_reminders_count: Int? = null,
+    val vehicle_status_color: String? = null,
+    val vehicle_status_id: Int? = null,
+    val vehicle_status_name: String? = null,
+    val vehicle_type_id: Int? = null,
+    val vehicle_type_name: String? = null,
+    val vin: String? = null,
+    val work_orders_count: Int? = null,
+    val year: String? = null
+)
+
+data class Label(
+    val id: Int? = null,
+    val name: String? = null
+)
